@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-element" style="width: 50px; height: 50px; left: 10%; animation-delay: 0s;"></div>
+        <div class="floating-element" style="width: 30px; height: 30px; left: 20%; animation-delay: 2s;"></div>
+        <div class="floating-element" style="width: 40px; height: 40px; left: 70%; animation-delay: 4s;"></div>
+        <div class="floating-element" style="width: 60px; height: 60px; left: 80%; animation-delay: 6s;"></div>
+        <div class="floating-element" style="width: 35px; height: 35px; left: 50%; animation-delay: 8s;"></div>
+    </div>
+
+    <!-- Particle System -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo neon-text">Siddharth Thorat</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                  <li><a href="#Projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+            <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+            <li><a href="#education" onclick="closeMobileMenu()">Education</a></li>
+            <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <div class="profile-container">
+                <div class="profile-photo">
+                    <div class="profile-img" >
+                       <img src="Profile.jpg" height="300vh" width="300vh" style="border-radius: 50%;">
+                    </div>
+                </div>
+            </div>
+            <h1 class="hero-title">Siddharth Thorat</h1>
+            <p class="hero-subtitle">Full Stack Java Developer</p>
+            <div class="cta-buttons">
+                <a href="SiddharthThoratResume.pdf" class="btn btn-primary">Download Resume</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+             </div>
+        </div>
+    </section>
+    <!-- links -->
+     <div class="social-links"  style="display: flex; justify-content: center; align-items: center; margin: 0%; padding: 0%;">
+                    <a href="https://github.com/CodeWithSid17" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/siddharth-thorat-93818524b" class="social-link" title="LinkedIn">
+                          <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Twitter">
+                          <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="sidthorat1706@gmail.com" class="social-link" title="Email">
+                          <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-content">
+            <h2 class="section-title">About Me</h2>
+            <div class="card glass-card">
+                <div class="about-content">
+                    <p class="about-text">
+                       Passionate about advancing technological skills in Java development and front-end web technologies, with practical internship experience building applications and engaging in cybersecurity principles
+                    </p>
+                    <p class="about-text">
+                        My journey in web development and software development started with a curiosity about how certain websites and software work, and it has evolved into a deep passion for crafting digital experiences that make a difference. I love staying up-to-date with the latest technologies and best practices.
+                    </p>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-content">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML5, CSS3, JavaScript, React</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend Development</h3>
+                    <p>PHP</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 88%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Database Management</h3>
+                    <p>MySQL</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Figma,Canva, Photoshop</p>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="section-content">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="card">
+                        <h3 style="color: #00d4ff; margin-bottom: 0.5rem;">BTECH in  Computer Science</h3>
+                        <p style="color: #ff00ff; margin-bottom: 1rem;">DBATU University • 2021-2025 • Percentage : </p>
+                        <p>Completed a Bachelor's degree in CSE with a focus on software development, problem-solving, and emerging technologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="card">
+                        <h3 style="color: #00d4ff; margin-bottom: 0.5rem;">Higher Secondary Education</h3>
+                        <p style="color: #ff00ff; margin-bottom: 1rem;">S.G.M College Karad • 2020-2021   • Percentage : 74.67%</p>
+                        <p>Completed Higher Secondary Education with specialization in Science and Mathematics.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="card">
+                        <h3 style="color: #00d4ff; margin-bottom: 0.5rem;">Secondary School Certificate</h3>
+                        <p style="color: #ff00ff; margin-bottom: 1rem;">Holy Convent School Umbraj • 2018-2019  • Percentage : 84.40%</p>
+                        <p>Successfully completed Secondary School Certificate with a strong academic foundation.</p>
+                    </div>
+                </div>
+                <h2 class="section-title">Certifications and Internships</h2>
+                 <div class="timeline-item">
+                    <div class="card">
+                        <h3 style="color: #00d4ff; margin-bottom: 0.5rem;">Frontend Web Development Internship</h3>
+                        <p style="color: #ff00ff; margin-bottom: 1rem;">IBM Skillbuild CSRBOX • 06/2024- 08/2024</p>
+                        <p>Gained Practical experience and Completed Project in my Internship journey</p>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="card">
+                        <h3 style="color: #00d4ff; margin-bottom: 0.5rem;">Core Java Certificate</h3>
+                        <p style="color: #ff00ff; margin-bottom: 1rem;">Internshala • 2023</p>
+                        <p>Learn All concepts related to Core Java</p>
+                    </div>
+                </div>
+                     <div class="timeline-item">
+                    <div class="card">
+                        <h3 style="color: #00d4ff; margin-bottom: 0.5rem;">SQL Certificate</h3>
+                        <p style="color: #ff00ff; margin-bottom: 1rem;">Scaler • 2025</p>
+                        <p>Learn All concepts related to SQL and Database design Course</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+      <section id="Projects">
+        <div class="section-content">
+            <h2 class="section-title">Projects</h2>
+            <div class="skills-grid">
+                <div class="project-item">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Ecommerce Price Comparison with Gift Sugguestion Chatbot</h3><br>
+                    <p>Java,Rapid API,Gemini API,HTML5, CSS3, JavaScript,</p>
+                   
+                </div>
+                <div class="project-item">
+                    <div class="skill-icon">🔍</div>
+                    <h3>Currency Detection System Using IOT</h3><br><br>
+                    <p>C++,Arduino UNO, Color Sensor,LCD display</p>
+                   
+                </div>
+                <div class="project-item">
+                    <div class="skill-icon">🖥️</div>
+                    <h3>Personal Expense Tracker</h3><br>
+                    <p>Java</p>
+                   
+                </div>
+                <div class="project-item">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Wealth-Matrix : SIP and EMI Calculator</h3><br>
+                    <p>Html5,CSS3,JavaScript</p>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-content">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="card">
+                <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem;">
+                    Ready to bring your ideas to life? Let's collaborate and create something amazing together!
+                </p>
+               <div class="contact-form-container">
+             <div class="contact-form-container">
+  <form class="contact-form" id="contactForm" 
+        action="https://formspree.io/f/mjkodywr" 
+        method="POST">
+      
+    <div class="form-group form-group-with-icon">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="form-group form-group-with-icon">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+    </div>
+
+    <div class="form-group form-group-with-icon">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+
+  <!-- Success / Error message -->
+  <p id="form-status"></p>
+</div>
+
+
+<!-- Thank You Message -->
+<p id="thankYou" style="display:none; font-weight:bold; color:green; margin-top:15px;"></p>
+
+
+                        <p id="thank-you" style="display:none; font-weight:bold; color:green; margin-top:10px;"></p>
+                  </div>
+
+                <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📧</div>
+                        <div>sidthorat1706@gmail.com</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📱</div>
+                        <div>+91 7385328252</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📍</div>
+                        <div>Pune Maharashtra</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Siddharth Thorat</h3>
+                <p class="footer-description">
+                    Passionate web developer creating amazing digital experiences with cutting-edge technologies.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/CodeWithSid17" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/siddharth-thorat-93818524b" class="social-link" title="LinkedIn">
+                          <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Twitter">
+                          <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="sidthorat1706@gmail.com" class="social-link" title="Email">
+                          <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                     <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                    <li><a href="#">Consulting</a></li>
+                    <li><a href="#">Maintenance</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Contact Info</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Pune, Maharashtra</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <span>+91 7385328252</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>sidthorat1706@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 Siddharth Thorat. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
+   
